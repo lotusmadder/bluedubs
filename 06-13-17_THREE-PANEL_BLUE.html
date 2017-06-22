@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>3 Panel Project, 6/13/17</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+body {
+background: #05142d;
+color: ghostwhite;
+font-family: monospace;
+}
+
+div#sidebar {
+background: #e5efff;
+color: #123772;
+border: 4px #05142d outset;
+border-radius: 20px;
+}
+
+div#main {
+background: white;
+color: #071f47;
+border: 4px #05142d outset;
+border-radius: 20px;
+}
+
+div#icons {
+background: #e5efff;
+color: #123772;
+font-size: 32px;
+border-radius: 20px;
+border: 4px #05142d outset;
+float: right;
+position: sticky;
+}
+    
+    #icons { position: fixed; left: 80%; top: 1px; margin: 0 0 0 5px; }
+
+div#well {
+background: #f2f5f9;
+border: 1px #7daaf2 inset;
+}
+
+h1#sidebar {
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+}
+
+h1#main {
+font-weight: bolder;
+font-size: 50px;
+text-align: center;
+}
+
+h1 {
+font-weight: bold;
+}
+h2 {
+font-weight: bold;
+}
+h3 {
+font-weight: bold;
+}
+h4 {
+font-weight: bold;
+}
+h5 {
+font-weight: bold;
+}
+h6 {
+font-weight: bold;
+}
+
+footer {
+font-family: sans-serif;
+font-size: 11px;
+margin: 10px;
+}
+
+div {
+padding: 5px;
+}
+
+ul#pagi {
+padding: 0;
+font-family: sans-serif;
+}
+
+</style>
+
+<body>
+<div class="container-fluid">
+<div class="row">
+
+<div id="sidebar" class="col-xs-3">
+<div class="page-header"><h1 id="sidebar">SIDEBAR</h1></div>
+<div class="well" id="well">This is a well and I'm testing it to see how much space it actually ends up leaving between it and the next header.</div>
+<h1>Regular</h1>
+<p>This is the body text on the sidebar and I'm just testing these divs.</p>
+
+<div class="progress-bar progress-bar-success progress-bar-striped active" role="progress-bar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:29%"><small>29%</small></div>
+
+<br><br>
+<small>
+<div class="well-sm"><a href="https://stackoverflow.com/questions/19681895/how-to-create-a-sticky-left-sidebar-menu-using-bootstrap-3">Stack Overflow: How to create a sticky left sidebar menu using Boostrap 3</a></div>
+</small>
+
+</div>
+
+<div id="main" class="col-xs-8">
+
+<div class="page-header"><h1 id="main">MAIN</h1></div>
+
+<!-- NAVBAR -->
+<ul class="pagination" id="pagi">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li class="disabled"><a href="#">It's Bothering Me That I Can't Center Pages</a></li></ul>
+
+<div class="well" id="well">This is a well and I'm testing it to see how much space it actually ends up leaving between it and the next header.</div>
+
+<h1>Regular</h1>
+<p>This is the body text and I'm just testing these divs. Basically I have to make sure the content on this side is longer than the content in the sidebar so the sidebar isn't longer than the main grid space because that is annoying. There's probably a way to make them both stay the same size, but I haven't looked it up yet.</p>
+
+<h2>First Subheading</h2>
+<p>Apparently what needs to happen is that my two smaller grid spaces need to be transformed into sidebars, so I can make them fixed. I'll probably only fix the icon sidebar on the right and at least for now leave the one on the left scrolling.</p>
+
+<h3>Second Subheading</h3>
+<p><a href="https://www.bootply.com/dMZgESVmaj">Bootstrap Left and Right Sidebars Fixed</a></p>
+
+<ul>Things to be done:
+<li>Make grid-sidebars actual sidebars (this should fix the side-scrolling problem</li>
+<ul><li><del>If it doesn't correct the side-scrolling problem, figure out how to do that</del></li></ul>
+    <li><del>Fix icon sidebar, as in make it not move</del></li>
+<li>Make left sidebar even with body in some automatic capacity</li></ul>
+
+<h4>Third Subheading</h4>
+<p>Here is the body text for the subheading.</p>
+
+<h5>Fourth Subheading</h5>
+<p>Here is the body text for the subheading.</p>
+
+<h6>Last Subheading</h6>
+<p>Here is the body text for the subheading.</p>
+
+</div>
+
+<!-- see CSS to make this thing work -->
+            <div id="icons" class="sticky-top">
+<span title="mailto:lotusinthefield@outlook.com"><a href="mailto:lotusinthefield@outlook.com"><span class="glyphicon glyphicon-envelope"></span></a></span><br>
+<a href="#"><span class="glyphicon glyphicon-comment"></span></a><br>
+<!-- bookmarks one doesn't work but if it did that would be cool -->
+<a href="addto:bookmarks"><span class="glyphicon glyphicon-heart"></span></a><br>
+<span title="List of Glyphicon Halflings"><a href="http://bootstrapmaster.com/live/one/icons.html" target="_blank"><span class="glyphicon glyphicon-pushpin"></span></a></span>
+                </div></div></div>
+
+</div>
+
+<footer style="text-align:right">So far so good. This is where a copyright goes.</footer>
+
+</div>
+</body>
+</html>

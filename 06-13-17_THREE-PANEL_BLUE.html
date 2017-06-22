@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="en-US">
 <head>
 
 <title>3 Panel Project, 6/13/17</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <style>
+    
 body {
 background: #05142d;
 color: ghostwhite;
 font-family: monospace;
 }
+        
 div#sidebar {
 background: #e5efff;
 color: #123772;
 border: 4px #05142d outset;
 border-radius: 20px;
-}
-
+    }
     
 div#main {
 background: white;
@@ -102,6 +104,7 @@ font-family: sans-serif;
 <div id="sidebar" class="col-xs-3">
 <div class="page-header"><h1 id="sidebar">SIDEBAR</h1></div>
 <div class="well" id="well">This is a well and I'm testing it to see how much space it actually ends up leaving between it and the next header.</div>
+    
 <h1>Regular</h1>
 <p>This is the body text on the sidebar and I'm just testing these divs.</p>
 
@@ -109,7 +112,8 @@ font-family: sans-serif;
 
 <br><br>
 <small>
-<div class="well-sm"><a href="https://stackoverflow.com/questions/19681895/how-to-create-a-sticky-left-sidebar-menu-using-bootstrap-3">Stack Overflow: How to create a sticky left sidebar menu using Boostrap 3</a></div>
+<div class="well-sm"><a href="https://stackoverflow.com/questions/19681895/how-to-create-a-sticky-left-sidebar-menu-using-bootstrap-3">Stack Overflow: How to create a sticky left sidebar menu using Boostrap 3</a><br>
+<a href="https://stackoverflow.com/questions/19695784/how-can-i-make-bootstrap-columns-all-the-same-height">Stack Overflow: How can I make Bootstrap columns all the same height?</a></div>
 </small>
 
 </div>
@@ -140,7 +144,7 @@ font-family: sans-serif;
 <li>Make grid-sidebars actual sidebars (this should fix the side-scrolling problem</li>
 <ul><li><del>If it doesn't correct the side-scrolling problem, figure out how to do that</del></li></ul>
     <li><del>Fix icon sidebar, as in make it not move</del></li>
-<li>Make left sidebar even with body in some automatic capacity</li></ul>
+<li>Make left sidebar even with body in some automatic capacity - <code>.row-eq.height {}</code>??</li></ul>
 
 <h4>Third Subheading</h4>
 <p>Here is the body text for the subheading.</p>
@@ -160,12 +164,11 @@ font-family: sans-serif;
 <!-- bookmarks one doesn't work but if it did that would be cool -->
 <a href="addto:bookmarks"><span class="glyphicon glyphicon-heart"></span></a><br>
 <span title="List of Glyphicon Halflings"><a href="http://bootstrapmaster.com/live/one/icons.html" target="_blank"><span class="glyphicon glyphicon-pushpin"></span></a></span>
-                </div></div></div>
+                </div></div>
 
 </div>
 
 <footer style="text-align:right">So far so good. This is where a copyright goes.</footer>
 
-</div>
 </body>
 </html>
